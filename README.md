@@ -7,6 +7,5 @@ This project is a simple Ice Cream Parlour Management System developed to stream
 
 # Features
 - User-friendly interface for managing inventory, orders, and customers.
-- CRUD operations for ice cream flavors, toppings, and customer information.
-- Order processing system with options for customization.
-- Billing functionality to generate invoices for order
+- Order processing system.
+- Billing functionalitY.
