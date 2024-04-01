@@ -7,10 +7,7 @@ struct icecream {
 
 int main() {
     // Create an array of struct icecream to store 10 flavors
-    struct icecream name[10] = {
-        "Vanilla", "Strawberry", "Chocolate", "Pista", "Butterscotch",
-        "Mango", "Chocovanilla", "Coffee", "Caramel", "Brownie"
-    };
+    struct icecream name[10] = {"Vanilla", "Strawberry", "Chocolate", "Pista", "Butterscotch","Mango", "Chocovanilla", "Coffee", "Caramel", "Brownie"};
 
     // Display a welcome message and menu options
     printf("Welcome To Ice Cream Parlour\n");
@@ -26,10 +23,12 @@ int main() {
     // Check user's choice
     if (choice == 1) {
         printf("We have 10 flavors for you\n");
+        
         // Loop through the flavors and print them along with their index
         for (int i = 0; i < 10; i++) {
             printf("%d. %s\n", i + 1, name[i].flavour);
         }
+        
         // Prompt the user to choose a flavor
         printf("Choose a flavor (1-10): ");
         scanf("%d", &choice2);
