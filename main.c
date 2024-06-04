@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 // Global variables declaration
@@ -28,7 +27,8 @@ void select(){
                 // Select flavor
                 printf("select your choice: \n");
                 scanf("%d",&choice2);
-                if(choice2>=1 && choice2<=10){
+                if(choice2>=1 && choice2<=10)
+                {
                     // Select size
                     printf("Select the size \n1.Small \n2.Large\n");
                     scanf("%d",&choice3);
@@ -39,14 +39,16 @@ void select(){
                         bill[j]=price_s[choice2-1];
                         j++;
                     }
-                    else if(choice3==2){
+                    else if(choice3==2)
+                    {
                         // Display selected flavor and size with price
                         printf("You chose large size %s ice-cream \nIt costs Rs.%d\n",flavour[choice2-1],price_l[choice2-1]);
                         // Add price to bill array
                         bill[j]=price_l[choice2-1];
                         j++;
                     }
-                    else{
+                    else
+                    {
                         // Invalid size option
                         printf("invalid option \nretry with valid option\n");
                         break;
@@ -57,7 +59,8 @@ void select(){
                     if(choice4==1){
                         // Continue ordering
                     }
-                    else{
+                    else
+                    {
                         // Calculate and display bill amount
                         int sum=0;
                         for(int i=0;i<10;i++){
@@ -67,12 +70,14 @@ void select(){
                         // Confirm order
                         printf("Confirm your order\n 1.confirm\n 2.cancel\n");
                         scanf("%d",&confirm);
-                        if(confirm==1){
+                        if(confirm==1)
+                        {
                             // Order confirmed
                             printf("your order confirmed\nThank you visit us again\n");
                             printf("Press 0 to exit\n");
                             scanf("%d",&end);
-                            if(end==0){
+                            if(end==0)
+                            {
                                 // Exit the program
                                 num=0;
                                 break;
@@ -84,7 +89,8 @@ void select(){
                             printf("1.Yes\n2.exit\n");
                             int reorder;
                             scanf("%d",&reorder);
-                            if(reorder==1){
+                            if(reorder==1)
+                            {
                                 // Select another flavor
                             }
                             else{
@@ -115,7 +121,8 @@ void select(){
 }
 
 // Main function
-int main() {
+int main()
+{
     // Display welcome message and options
     printf("Welcome To Ice Cream Parlour\n");
     printf("1.Show menu\n");
